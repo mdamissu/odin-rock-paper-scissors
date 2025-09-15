@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src = "page.js"></script>
+    <link rel = "stylesheet" href = "styles.css">
 </head>
 <body>
+    <h1>
+        Rock, Paper, Scissors
+    </h1>
 
+    <section class = "group">
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="rounds">Round(s):</label><br>
+            <input type="number" id="rounds" name="rounds" min = "1"><br>
+            <input type = "button" id ="subm" name = "subm" value = "Submit"><br>
+        </form> 
+    </section>
+
+    <section class = "hidden">
+        <div class  = "score">
+                <div class = "human">
+                    <div class = "humanName">
+
+                    </div>
+                    <div class = "humanScore">
+
+                    </div>
+                </div>
+    
+                <div class = "bot">
+                    <div>
+                        Bot:
+                    </div>
+                    <div class = "botScore">
+                    
+                    </div>
+                </div>
+
+        </div>
+        <form>
+            <input class = "choice" id = "rock" type = "button" value = "rock">
+            <input class = "choice" id = "paper" type = "button" value = "paper"> 
+            <input class = "choice" id = "scissors" type = "button" value = "scissors">
+        </form>   
+    </section>
+    <script src = "page.js"></script>
 </body>
 </html>
